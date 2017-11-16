@@ -1,0 +1,224 @@
+/*
+Theme Name: Rentcar Bams
+Theme URI: http://bambangsetyawan.com/wordpress-themes
+Author: bambamg setyawan
+Author URI: http://bambangsetyawan.com
+Description: Custom wordpress theme
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: simple, usable , revolutionar
+Text Domain: Rentcar Bams
+This theme is specialy build for revolutionar online shop with customize product
+*/
+
+//variable color
+$lightgreen: rgba(#25D366,1);
+$lightgreen-hover: rgba(#1ea653,0.8);
+$brandcolor: #ed1e79;
+$brandcolor-hover: #c41c64;
+body {
+  font-family: Rubik;
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+.container { margin-bottom: 1rem}
+
+//header area
+#logo{position: absolute !important; height: 3.8rem}
+
+.navbar-brand {
+  margin-left: 5rem;
+ // padding-bottom: 0.7rem;
+  transition: padding .2s;
+  min-height: 3.8rem;
+  H1 {padding-top: 1rem;
+  font-size: 1rem;}
+}
+
+.navbar-nav{
+  margin-right: 5rem;
+}
+
+.text-lightgreen{
+  color: $lightgreen;
+}
+
+.navbar-dark{
+  .navbar-brand:hover {
+    color: $brandcolor;
+  }
+  .navbar-nav{
+    .nav-link{
+      color: white;
+      :hover{
+        color: #8d8d8d;
+      }
+    }
+  }
+}
+
+.navbar .short  {
+  min-height: 60px;
+  transition: all .2s;
+  padding: 0rem;
+}
+
+.form-booking-mobil .custom-select {
+  background: #FFF !important;
+
+}
+
+//product - service area
+#footer-product{
+  a, .link-white{
+    text-decoration: none;
+    color: white;
+  }
+
+  .block-hover:hover, .wa_chat:hover{
+    background: $brandcolor-hover !important;
+    border-color: $brandcolor-hover ;
+  }
+
+  .input-group-addon{
+    background: $brandcolor;
+    border-color: $brandcolor ;
+  }
+
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: $brandcolor;
+    outline: none;
+  }
+}
+.wa_chat , .btn{
+  cursor: pointer;
+
+}
+
+.jumbotron {
+  background: none !important;
+  h1,p{
+    color: #FFFFFF;
+  }
+}
+
+
+//padding margin
+
+.padding-top-10{
+  padding-top: 10px;
+}
+
+.padding-top-20{
+   padding-top: 20px;
+ }
+
+.padding-top-30{
+  padding-top: 30px;
+}
+
+.padding-bottom-30{
+  padding-bottom: 30px;
+}
+
+.margin-top1 { margin-top: 1rem;}
+.margin-top2 { margin-top: 2rem;}
+.margin-bottom1{ margin-bottom: 1rem;}
+.margin-bottom2 { margin-bottom: 2rem;}
+
+
+//color
+.gray { background: darkgray};
+.lightgreen {
+  background: $lightgreen !important;
+  border: $lightgreen !important;;
+}
+
+
+//testimoni
+.jarallax {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  min-height: 600px;
+}
+
+.testimoni {
+  .display-4{
+    color: #FFFFFF !important;
+  }
+
+  .user-pict { height: 150px; border: 2px solid #fff;}
+
+  h2, p{
+    color: #FFFFFF !important;
+  }
+}
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { color: deeppink;
+  .navbar-nav {
+    text-align: center;
+    .nav-item { text-align: center;}
+  }
+
+  .card-columns {
+    column-count: 4;
+    column-gap: 1.25rem; }
+  .card-columns .card {
+    display: inline-block;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .card-columns {
+    column-count: 4;
+    column-gap: 1.25rem; }
+  .card-columns .card {
+    display: inline-block;
+     } }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {#logo{position: fixed!important;} }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+  #logo{position: fixed!important;}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) { }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+
+//for function
+.display_none { display: none;}
+
+footer#website {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #343a40;
+  color: #FFF;
+  a {
+    color: #FFF;
+
+  :hover {
+    color: $brandcolor-hover;
+  }}
+
+  h3{color:$brandcolor}
+}
+
+h1{
+  .title{ text-align: center;}
+}
